@@ -1,12 +1,12 @@
 # Compile all of the java files
 javac RubikCube.java;
 javac RubikCubeNode.java;
-javac CornerHeuristics.java;
+javac CornerSideHeuristics.java;
 javac EdgeHeuristics.java;
 # Run the Heuristics generation class and store the
 # output into a csv file
 echo "Generate CornerSide heuristics..."
-java CornerSideHeuristics -Xmx2048M > corners.csv;
+java CornerSideHeuristics -Xmx2048M > cornerSide.csv;
 # Generate the first set of edge heuristics and store
 # the output into a csv file
 echo "Generate Edge Set One heuristics..."
